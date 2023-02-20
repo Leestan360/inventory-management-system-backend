@@ -7,6 +7,6 @@ class Inventory < ApplicationRecord
   validates :quantity, presence: true
   validates :unit, presence: true
   validates :expiry_date, presence: true
-  vlidates :threshold_value, presence: true
+  validates :threshold_value, presence: true
 
 end
