@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: inventory_management_system_backend_production
   username: inventory_management_system_backend
   password: <%= ENV["INVENTORY_MANAGEMENT_SYSTEM_BACKEND_DATABASE_PASSWORD"] %>
