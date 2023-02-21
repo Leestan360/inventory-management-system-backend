@@ -17,7 +17,7 @@ class InventoriesController < ApplicationController
 
   # Params for creating a new inventory
   def inventory_params
-    params.require(:inventory).permit(:product_name, :product_id, :category, :buying_price, :quantity, :unit, :expiry_date, :threshold_value)
+    params.require(:inventory).permit(:product_name, :product_id, :category, :buying_price, :quantity, :unit, :expiry_date, :threshold_value, :supplier_id)
   end
 
 end
