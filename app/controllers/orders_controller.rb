@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
 
-  skip_before_action :authorize, only: [:create, :index]
+  # skip_before_action :authorize, only: [:create, :index]
 
   # Create a new order
   def create

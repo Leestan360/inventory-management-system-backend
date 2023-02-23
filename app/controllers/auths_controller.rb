@@ -12,6 +12,10 @@ class AuthsController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+  end
+
   private
 
   def user_login_params
